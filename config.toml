@@ -1,4 +1,4 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'OSINT Halo Bl0g | OSINT Explorer'
+title = 'OSINT Halo Bl0g'
 theme = "LoveIt"

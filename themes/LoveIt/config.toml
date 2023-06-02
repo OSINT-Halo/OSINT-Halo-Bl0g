@@ -1,9 +1,11 @@
 [module]
+
 	[module.hugoVersion]
 		extended = true
 		min = "0.62.0"
 
 [params]
+
 	# site default theme ["auto", "light", "dark"]
 	# 网站默认主题 ["auto", "light", "dark"]
 	defaultTheme = "auto"
@@ -37,6 +39,7 @@
 # Header config
 # 页面头部导航栏配置
 [params.header]
+
 	# desktop header mode ["fixed", "normal", "auto"]
 	# 桌面端导航栏模式 ["fixed", "normal", "auto"]
 	desktopMode = "fixed"
@@ -48,9 +51,10 @@
 	# Header title config
 	# 页面头部导航栏标题配置
 	[params.header.title]
+
 		# URL of the LOGO
 		# LOGO 的 URL
-		logo = ""
+		logo = "https://osint-halo.s3.ap-south-1.amazonaws.com/assets/logos/osint_halo_transparent.png"
 		
 		# title name
 		# 标题名称
@@ -71,7 +75,7 @@
 # Footer config
 # 页面底部信息配置
 [params.footer]
-	enable = true
+	enable = false
 
 	# Custom content (HTML format is supported)
 	# 自定义内容 (支持 HTML 格式)
@@ -144,7 +148,7 @@
     
 	# modern SVG favicon to use in place of older style .png and .ico files
     # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
-    svgFavicon = ""
+    svgFavicon = "https://osint-halo.s3.ap-south-1.amazonaws.com/assets/logos/osint_halo_transparent.svg"
     
 	# Android browser theme color
     # Android 浏览器主题色
@@ -161,7 +165,7 @@
 # Search config
 # 搜索配置
 [params.search]
-    enable = true
+    enable = false
 
     # type of search engine ["lunr", "algolia"]
     # 搜索引擎的类型 ["lunr", "algolia"]
@@ -214,15 +218,15 @@
 		
 		# URL of avatar shown in home page
 		# 主页显示头像的 URL
-		avatarURL = ""
+		avatarURL = "https://osint-halo.s3.ap-south-1.amazonaws.com/assets/logos/osint_halo.png"
 		
 		# title shown in home page (HTML format is supported)
 		# 主页显示的网站标题 (支持 HTML 格式)
-		title = ""
+		title = "Launching Soon!"
 		
 		# subtitle shown in home page (HTML format is supported)
 		# 主页显示的网站副标题 (允许 HTML 格式)
-		subtitle = "🔍 Enthusiastic OSINT Explorer. Let's decode the world together!"
+		subtitle = ""
 		
 		# whether to use typeit animation for subtitle
 		# 是否为副标题显示打字机动画
@@ -250,7 +254,7 @@
 [params.social]
     GitHub = ""
     Linkedin = ""
-    Twitter = ""
+    Twitter = "OsintHalo"
     Instagram = ""
     Facebook = ""
     Telegram = ""
@@ -324,76 +328,95 @@
     Phone = ""
     RSS = ""
 
-  # Page global config
-  # 文章页面全局配置
-  [params.page]
+# Page global config
+# 文章页面全局配置
+[params.page]
     # whether to hide a page from home page
     # 是否在主页隐藏一篇文章
     hiddenFromHomePage = false
-    # whether to hide a page from search results
+    
+	# whether to hide a page from search results
     # 是否在搜索结果中隐藏一篇文章
     hiddenFromSearch = false
-    # whether to enable twemoji
+    
+	# whether to enable twemoji
     # 是否使用 twemoji
     twemoji = false
-    # whether to enable lightgallery
+    
+	# whether to enable lightgallery
     # 是否使用 lightgallery
     lightgallery = false
-    # whether to enable the ruby extended syntax
+    
+	# whether to enable the ruby extended syntax
     # 是否使用 ruby 扩展语法
     ruby = true
-    # whether to enable the fraction extended syntax
+    
+	# whether to enable the fraction extended syntax
     # 是否使用 fraction 扩展语法
     fraction = true
-    # whether to enable the fontawesome extended syntax
+    
+	# whether to enable the fontawesome extended syntax
     # 是否使用 fontawesome 扩展语法
     fontawesome = true
-    # whether to show link to Raw Markdown content of the content
+    
+	# whether to show link to Raw Markdown content of the content
     # 是否显示原始 Markdown 文档内容的链接
     linkToMarkdown = true
-    # whether to show the full text content in RSS
+    
+	# whether to show the full text content in RSS
     # 是否在 RSS 中显示全文内容
     rssFullText = false
-    # Table of the contents config
+    
+	# Table of the contents config
     # 目录配置
     [params.page.toc]
-      # whether to enable the table of the contents
-      # 是否使用目录
-      enable = true
-      # whether to keep the static table of the contents in front of the post
-      # 是否保持使用文章前面的静态目录
-      keepStatic = false
-      # whether to make the table of the contents in the sidebar automatically collapsed
-      # 是否使侧边目录自动折叠展开
-      auto = true
-    # Code config
+		# whether to enable the table of the contents
+		# 是否使用目录
+		enable = true
+
+		# whether to keep the static table of the contents in front of the post
+		# 是否保持使用文章前面的静态目录
+		keepStatic = false
+		
+		# whether to make the table of the contents in the sidebar automatically collapsed
+		# 是否使侧边目录自动折叠展开
+		auto = true
+    
+	# Code config
     # 代码配置
     [params.page.code]
-      # whether to show the copy button of the code block
-      # 是否显示代码块的复制按钮
-      copy = true
-      # the maximum number of lines of displayed code by default
-      # 默认展开显示的代码行数
-      maxShownLines = 50
-    # KaTeX mathematical formulas config (KaTeX https://katex.org/)
+		# whether to show the copy button of the code block
+		# 是否显示代码块的复制按钮
+		copy = true
+		
+		# the maximum number of lines of displayed code by default
+		# 默认展开显示的代码行数
+		maxShownLines = 50
+    
+	# KaTeX mathematical formulas config (KaTeX https://katex.org/)
     # KaTeX 数学公式配置 (KaTeX https://katex.org/)
     [params.page.math]
-      enable = false
-      # default inline delimiter is $ ... $ and \( ... \)
-      # 默认行内定界符是 $ ... $ 和 \( ... \)
-      inlineLeftDelimiter = ""
-      inlineRightDelimiter = ""
-      # default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
-      # 默认块定界符是 $$ ... $$, \[ ... \],  \begin{equation} ... \end{equation} 和一些其它的函数
-      blockLeftDelimiter = ""
-      blockRightDelimiter = ""
-      # KaTeX extension copy_tex
-      # KaTeX 插件 copy_tex
-      copyTex = true
-      # KaTeX extension mhchem
-      # KaTeX 插件 mhchem
-      mhchem = true
-    # Mapbox GL JS config (Mapbox GL JS https://docs.mapbox.com/mapbox-gl-js)
+		enable = false
+
+		# default inline delimiter is $ ... $ and \( ... \)
+		# 默认行内定界符是 $ ... $ 和 \( ... \)
+		inlineLeftDelimiter = ""
+		inlineRightDelimiter = ""
+		
+		# default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
+		# 默认块定界符是 $$ ... $$, \[ ... \],  \begin{equation} ... \end{equation} 和一些其它的函数
+		blockLeftDelimiter = ""
+		blockRightDelimiter = ""
+		
+		# KaTeX extension copy_tex
+		# KaTeX 插件 copy_tex
+		copyTex = true
+		
+		# KaTeX extension mhchem
+		# KaTeX 插件 mhchem
+		mhchem = true
+    
+	# Mapbox GL JS config (Mapbox GL JS https://docs.mapbox.com/mapbox-gl-js)
     # Mapbox GL JS 配置 (Mapbox GL JS https://docs.mapbox.com/mapbox-gl-js)
     [params.page.mapbox]
       # access token of Mapbox GL JS

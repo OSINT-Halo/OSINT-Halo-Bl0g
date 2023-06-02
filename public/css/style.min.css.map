@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/media/guri/Xan0er_Space/Osint-Halo-Projects/Osint-Halo-Blog",
+	"sourceRoot": "/media/guri/Xan0er_Space/OSINT-Halo-Projects/OSINT-Halo.github.io",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/lib/normalize/normalize.css",
