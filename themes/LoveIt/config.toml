@@ -75,15 +75,16 @@
 # Footer config
 # 页面底部信息配置
 [params.footer]
-	enable = false
+
+	enable = true
 
 	# Custom content (HTML format is supported)
 	# 自定义内容 (支持 HTML 格式)
-	custom = ""
+	custom = "Created For <b>🌎 OSINT Community</b> By <style='color: #95396D;'><b>OSINT Halo</b></style>"
 	
 	# whether to show Hugo and theme info
 	# 是否显示 Hugo 和主题信息
-	hugo = true
+	hugo = false
 	
 	# whether to show copyright info
 	# 是否显示版权信息
@@ -108,6 +109,7 @@
 # Section (all posts) page config
 # Section (所有文章) 页面配置
 [params.section]
+
 	# special amount of posts in each section page
 	# section 页面每页显示文章数量
 	paginate = 20
@@ -123,6 +125,7 @@
 # List (category or tag) page config
 # List (目录或标签) 页面配置
 [params.list]
+
     # special amount of posts in each list page
     # list 页面每页显示文章数量
     paginate = 20
@@ -138,6 +141,7 @@
 # App icon config
 # 应用图标配置
 [params.app]
+
     # optional site title override for the app when added to an iOS home screen or Android launcher
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
     title = "OSINT Halo Bl0g"
@@ -165,7 +169,8 @@
 # Search config
 # 搜索配置
 [params.search]
-    enable = false
+
+    enable = true
 
     # type of search engine ["lunr", "algolia"]
     # 搜索引擎的类型 ["lunr", "algolia"]
@@ -203,6 +208,7 @@
 # Home page config
 # 主页信息设置
 [params.home]
+
     # amount of RSS pages
     # RSS 文章数目
     rss = 10
@@ -210,6 +216,7 @@
     # Home page profile
     # 主页个人信息
     [params.home.profile]
+
 		enable = true
 
 		# Gravatar Email for preferred avatar in home page
@@ -243,6 +250,7 @@
     # Home page posts
     # 主页文章列表
     [params.home.posts]
+
 		enable = true
 		
 		# special amount of posts in each home posts page
@@ -252,7 +260,8 @@
 # Social config in home page
 # 主页的社交信息设置
 [params.social]
-    GitHub = ""
+
+    GitHub = "OSINT-Halo"
     Linkedin = ""
     Twitter = "OsintHalo"
     Instagram = ""
@@ -324,13 +333,14 @@
     Plume = ""
     HackTheBox = ""
     RootMe= ""
-    Email = ""
+    Email = "osintearthhalo@gmail.com"
     Phone = ""
     RSS = ""
 
 # Page global config
 # 文章页面全局配置
 [params.page]
+
     # whether to hide a page from home page
     # 是否在主页隐藏一篇文章
     hiddenFromHomePage = false
@@ -370,6 +380,7 @@
 	# Table of the contents config
     # 目录配置
     [params.page.toc]
+
 		# whether to enable the table of the contents
 		# 是否使用目录
 		enable = true
@@ -385,6 +396,7 @@
 	# Code config
     # 代码配置
     [params.page.code]
+
 		# whether to show the copy button of the code block
 		# 是否显示代码块的复制按钮
 		copy = true
@@ -396,6 +408,7 @@
 	# KaTeX mathematical formulas config (KaTeX https://katex.org/)
     # KaTeX 数学公式配置 (KaTeX https://katex.org/)
     [params.page.math]
+
 		enable = false
 
 		# default inline delimiter is $ ... $ and \( ... \)
@@ -419,279 +432,331 @@
 	# Mapbox GL JS config (Mapbox GL JS https://docs.mapbox.com/mapbox-gl-js)
     # Mapbox GL JS 配置 (Mapbox GL JS https://docs.mapbox.com/mapbox-gl-js)
     [params.page.mapbox]
-      # access token of Mapbox GL JS
-      # Mapbox GL JS 的 access token
-      accessToken = ""
-      # style for the light theme
-      # 浅色主题的地图样式
-      lightStyle = "mapbox://styles/mapbox/light-v10?optimize=true"
-      # style for the dark theme
-      # 深色主题的地图样式
-      darkStyle = "mapbox://styles/mapbox/dark-v10?optimize=true"
-      # whether to add NavigationControl (https://docs.mapbox.com/mapbox-gl-js/api/#navigationcontrol)
-      # 是否添加 NavigationControl (https://docs.mapbox.com/mapbox-gl-js/api/#navigationcontrol)
-      navigation = true
-      # whether to add GeolocateControl (https://docs.mapbox.com/mapbox-gl-js/api/#geolocatecontrol)
-      # 是否添加 GeolocateControl (https://docs.mapbox.com/mapbox-gl-js/api/#geolocatecontrol)
-      geolocate = true
-      # whether to add ScaleControl (https://docs.mapbox.com/mapbox-gl-js/api/#scalecontrol)
-      # 是否添加 ScaleControl (https://docs.mapbox.com/mapbox-gl-js/api/#scalecontrol)
-      scale = true
-      # whether to add FullscreenControl (https://docs.mapbox.com/mapbox-gl-js/api/#fullscreencontrol)
-      # 是否添加 FullscreenControl (https://docs.mapbox.com/mapbox-gl-js/api/#fullscreencontrol)
-      fullscreen = true
-    # Social share links in post page
+
+		# access token of Mapbox GL JS
+		# Mapbox GL JS 的 access token
+		accessToken = ""
+
+		# style for the light theme
+		# 浅色主题的地图样式
+		lightStyle = "mapbox://styles/mapbox/light-v10?optimize=true"
+		
+		# style for the dark theme
+		# 深色主题的地图样式
+		darkStyle = "mapbox://styles/mapbox/dark-v10?optimize=true"
+		
+		# whether to add NavigationControl (https://docs.mapbox.com/mapbox-gl-js/api/#navigationcontrol)
+		# 是否添加 NavigationControl (https://docs.mapbox.com/mapbox-gl-js/api/#navigationcontrol)
+		navigation = true
+		
+		# whether to add GeolocateControl (https://docs.mapbox.com/mapbox-gl-js/api/#geolocatecontrol)
+		# 是否添加 GeolocateControl (https://docs.mapbox.com/mapbox-gl-js/api/#geolocatecontrol)
+		geolocate = true
+		
+		# whether to add ScaleControl (https://docs.mapbox.com/mapbox-gl-js/api/#scalecontrol)
+		# 是否添加 ScaleControl (https://docs.mapbox.com/mapbox-gl-js/api/#scalecontrol)
+		scale = true
+		
+		# whether to add FullscreenControl (https://docs.mapbox.com/mapbox-gl-js/api/#fullscreencontrol)
+		# 是否添加 FullscreenControl (https://docs.mapbox.com/mapbox-gl-js/api/#fullscreencontrol)
+		fullscreen = true
+    
+	# Social share links in post page
     # 文章页面的分享信息设置
     [params.page.share]
-      enable = true
-      Twitter = true
-      Facebook = true
-      Linkedin = false
-      Whatsapp = false
-      Pinterest = false
-      Tumblr = false
-      HackerNews = true
-      Reddit = false
-      VK = false
-      Buffer = false
-      Xing = false
-      Line = true
-      Instapaper = false
-      Pocket = false
-      Flipboard = false
-      Weibo = true
-      Blogger = false
-      Baidu = false
-      Odnoklassniki = false
-      Evernote = false
-      Skype = false
-      Trello = false
-      Mix = false
+
+		enable = true
+		Twitter = true
+		Facebook = true
+		Linkedin = false
+		Whatsapp = false
+		Pinterest = false
+		Tumblr = false
+		HackerNews = true
+		Reddit = false
+		VK = false
+		Buffer = false
+		Xing = false
+		Line = true
+		Instapaper = false
+		Pocket = false
+		Flipboard = false
+		Weibo = true
+		Blogger = false
+		Baidu = false
+		Odnoklassniki = false
+		Evernote = false
+		Skype = false
+		Trello = false
+		Mix = false
+
     # Comment config
     # 评论系统设置
     [params.page.comment]
-      enable = false
-      # Disqus comment config (https://disqus.com/)
-      # Disqus 评论系统设置 (https://disqus.com/)
-      [params.page.comment.disqus]
-        enable = false
-        # Disqus shortname to use Disqus in posts
-        # Disqus 的 shortname，用来在文章中启用 Disqus 评论系统
-        shortname = ""
-      # Gitalk comment config (https://github.com/gitalk/gitalk)
-      # Gitalk 评论系统设置 (https://github.com/gitalk/gitalk)
-      [params.page.comment.gitalk]
-        enable = false
-        owner = ""
-        repo = ""
-        clientId = ""
-        clientSecret = ""
-      # Valine comment config (https://github.com/xCss/Valine)
-      # Valine 评论系统设置 (https://github.com/xCss/Valine)
-      [params.page.comment.valine]
-        enable = false
-        appId = ""
-        appKey = ""
-        placeholder = ""
-        avatar = "mp"
-        meta= ""
-        pageSize = 10
-        # automatically adapt the current theme i18n configuration when empty
-        # 为空时自动适配当前主题 i18n 配置
-        lang = ""
-        visitor = true
-        recordIP = true
-        highlight = true
-        enableQQ = false
-        serverURLs = ""
-        # emoji data file name, default is "google.yml"
-        # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
-        # located in "themes/LoveIt/assets/lib/valine/emoji/" directory
-        # you can store your own data files in the same path under your project:
-        # "assets/lib/valine/emoji/"
-        # emoji 数据文件名称, 默认是 "google.yml"
-        # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
-        # 位于 "themes/LoveIt/assets/lib/valine/emoji/" 目录
-        # 可以在你的项目下相同路径存放你自己的数据文件:
-        # "assets/lib/valine/emoji/"
-        emoji = ""
-      # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
-      # Facebook 评论系统设置 (https://developers.facebook.com/docs/plugins/comments)
-      [params.page.comment.facebook]
-        enable = false
-        width = "100%"
-        numPosts = 10
-        appId = ""
-        # automatically adapt the current theme i18n configuration when empty
-        # 为空时自动适配当前主题 i18n 配置
-        languageCode = ""
-      # Telegram comments config (https://comments.app/)
-      # Telegram comments 评论系统设置 (https://comments.app/)
-      [params.page.comment.telegram]
-        enable = false
-        siteID = ""
-        limit = 5
-        height = ""
-        color = ""
-        colorful = true
-        dislikes = false
-        outlined = false
-      # Commento comment config (https://commento.io/)
-      # Commento comment 评论系统设置 (https://commento.io/)
-      [params.page.comment.commento]
-        enable = false
-      # utterances comment config (https://utteranc.es/)
-      # utterances comment 评论系统设置 (https://utteranc.es/)
-      [params.page.comment.utterances]
-        enable = false
-        # owner/repo
-        repo = ""
-        issueTerm = "pathname"
-        label = ""
-        lightTheme = "github-light"
-        darkTheme = "github-dark"
-      # giscus comment config (https://giscus.app/)
-      # giscus comment 评论系统设置 (https://giscus.app/zh-CN)
-      [params.page.comment.giscus]
-        # You can refer to the official documentation of giscus to use the following configuration.
-        # 你可以参考官方文档来使用下列配置
-        enable = false
-        repo = ""
-        repoId = ""
-        category = "Announcements"
-        categoryId = ""
-        # automatically adapt the current theme i18n configuration when empty
-        # 为空时自动适配当前主题 i18n 配置
-        lang = ""
-        mapping = "pathname"
-        reactionsEnabled = "1"
-        emitMetadata = "0"
-        inputPosition = "bottom"
-        lazyLoading = false
-        lightTheme = "light"
-        darkTheme = "dark"
-    # Third-party library config
-    # 第三方库配置
-    [params.page.library]
-      [params.page.library.css]
-        # someCSS = "some.css"
-        # located in "assets/" 位于 "assets/"
-        # Or 或者
-        # someCSS = "https://cdn.example.com/some.css"
-      [params.page.library.js]
-        # someJavascript = "some.js"
-        # located in "assets/" 位于 "assets/"
-        # Or 或者
-        # someJavascript = "https://cdn.example.com/some.js"
+	
+		enable = false
+		
+		# Disqus comment config (https://disqus.com/)
+		# Disqus 评论系统设置 (https://disqus.com/)
+      	[params.page.comment.disqus]
+        	
+			enable = false
+			
+			# Disqus shortname to use Disqus in posts
+			# Disqus 的 shortname，用来在文章中启用 Disqus 评论系统
+			shortname = ""
+      
+		# Gitalk comment config (https://github.com/gitalk/gitalk)
+		# Gitalk 评论系统设置 (https://github.com/gitalk/gitalk)
+		[params.page.comment.gitalk]
+			
+			enable = false
+			owner = ""
+			repo = ""
+			clientId = ""
+			clientSecret = ""
+			
+		# Valine comment config (https://github.com/xCss/Valine)
+		# Valine 评论系统设置 (https://github.com/xCss/Valine)
+		[params.page.comment.valine]
+
+			enable = false
+			appId = ""
+			appKey = ""
+			placeholder = ""
+			avatar = "mp"
+			meta= ""
+			pageSize = 10
+
+			# automatically adapt the current theme i18n configuration when empty
+			# 为空时自动适配当前主题 i18n 配置
+			lang = ""
+			visitor = true
+			recordIP = true
+			highlight = true
+			enableQQ = false
+			serverURLs = ""
+			
+			# emoji data file name, default is "google.yml"
+			# ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
+			# located in "themes/LoveIt/assets/lib/valine/emoji/" directory
+			# you can store your own data files in the same path under your project:
+			# "assets/lib/valine/emoji/"
+			# emoji 数据文件名称, 默认是 "google.yml"
+			# ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
+			# 位于 "themes/LoveIt/assets/lib/valine/emoji/" 目录
+			# 可以在你的项目下相同路径存放你自己的数据文件:
+			# "assets/lib/valine/emoji/"
+			emoji = ""
+      
+		# Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
+		# Facebook 评论系统设置 (https://developers.facebook.com/docs/plugins/comments)
+		[params.page.comment.facebook]
+			
+			enable = false
+			width = "100%"
+			numPosts = 10
+			appId = ""
+			
+			# automatically adapt the current theme i18n configuration when empty
+			# 为空时自动适配当前主题 i18n 配置
+			languageCode = ""
+      
+		# Telegram comments config (https://comments.app/)
+		# Telegram comments 评论系统设置 (https://comments.app/)
+		[params.page.comment.telegram]
+			
+			enable = false
+			siteID = ""
+			limit = 5
+			height = ""
+			color = ""
+			colorful = true
+			dislikes = false
+			outlined = false
+      
+		# Commento comment config (https://commento.io/)
+		# Commento comment 评论系统设置 (https://commento.io/)
+		[params.page.comment.commento]
+			enable = false
+      
+		# utterances comment config (https://utteranc.es/)
+		# utterances comment 评论系统设置 (https://utteranc.es/)
+		[params.page.comment.utterances]
+			enable = false
+			# owner/repo
+			repo = ""
+			issueTerm = "pathname"
+			label = ""
+			lightTheme = "github-light"
+			darkTheme = "github-dark"
+
+		# giscus comment config (https://giscus.app/)
+		# giscus comment 评论系统设置 (https://giscus.app/zh-CN)
+		[params.page.comment.giscus]
+		
+			# You can refer to the official documentation of giscus to use the following configuration.
+			# 你可以参考官方文档来使用下列配置
+			enable = false
+			repo = ""
+			repoId = ""
+			category = "Announcements"
+			categoryId = ""
+			
+			# automatically adapt the current theme i18n configuration when empty
+			# 为空时自动适配当前主题 i18n 配置
+			lang = ""
+			mapping = "pathname"
+			reactionsEnabled = "1"
+			emitMetadata = "0"
+			inputPosition = "bottom"
+			lazyLoading = false
+			lightTheme = "light"
+			darkTheme = "dark"
+    
+		# Third-party library config
+		# 第三方库配置
+		[params.page.library]
+
+			[params.page.library.css]
+		
+				# someCSS = "some.css"
+				# located in "assets/" 位于 "assets/"
+				# Or 或者
+				# someCSS = "https://cdn.example.com/some.css"
+		
+			[params.page.library.js]
+		
+				# someJavascript = "some.js"
+				# located in "assets/" 位于 "assets/"
+				# Or 或者
+				# someJavascript = "https://cdn.example.com/some.js"
+
     # Page SEO config
     # 页面 SEO 配置
     [params.page.seo]
-      # image URL
-      # 图片 URL
-      images = []
-      # Publisher info
-      # 出版者信息
-      [params.page.seo.publisher]
-        name = ""
-        logoUrl = ""
 
-  # TypeIt config
-  # TypeIt 配置
-  [params.typeit]
-    # typing speed between each step (measured in milliseconds)
-    # 每一步的打字速度 (单位是毫秒)
-    speed = 100
-    # blinking speed of the cursor (measured in milliseconds)
-    # 光标的闪烁速度 (单位是毫秒)
-    cursorSpeed = 1000
-    # character used for the cursor (HTML format is supported)
-    # 光标的字符 (支持 HTML 格式)
-    cursorChar = "|"
-    # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
-    # 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
-    duration = -1
+		# image URL
+		# 图片 URL
+		images = []
+	
+		# Publisher info
+		# 出版者信息
+		[params.page.seo.publisher]
 
-  # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
-  # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
-  [params.verification]
-    google = ""
-    bing = ""
-    yandex = ""
-    pinterest = ""
-    baidu = ""
+			name = ""
+			logoUrl = ""
 
-  # Site SEO config
-  # 网站 SEO 配置
-  [params.seo]
-    # image URL
-    # 图片 URL
-    image = ""
-    # thumbnail URL
-    # 缩略图 URL
-    thumbnailUrl = ""
+	# TypeIt config
+	# TypeIt 配置
+	[params.typeit]
 
-# Analytics config
-# 网站分析配置
-[params.analytics]
+		# typing speed between each step (measured in milliseconds)
+		# 每一步的打字速度 (单位是毫秒)
+		speed = 100
+	
+		# blinking speed of the cursor (measured in milliseconds)
+		# 光标的闪烁速度 (单位是毫秒)
+		cursorSpeed = 1000
+	
+		# character used for the cursor (HTML format is supported)
+		# 光标的字符 (支持 HTML 格式)
+		cursorChar = "|"
+	
+		# cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+		# 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
+		duration = -1
 
-    enable = true
-    
-	# Google Analytics
-    [params.analytics.google]
-		id = "G-KEJQBQ5N2J"
+	# Site verification code for Google/Bing/Yandex/Pinterest/Baidu
+	# 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
+	[params.verification]
 		
-		# whether to anonymize IP
-		# 是否匿名化用户 IP
-		anonymizeIP = true
-    
-	# Fathom Analytics
-    [params.analytics.fathom]
-		id = ""
+		google = ""
+		bing = ""
+		yandex = ""
+		pinterest = ""
+		baidu = ""
+
+	# Site SEO config
+	# 网站 SEO 配置
+	[params.seo]
+
+		# image URL
+		# 图片 URL
+		image = ""
 		
-		# server url for your tracker if you're self hosting
-		# 自行托管追踪器时的主机路径
-		server = ""
-    
-	# Plausible Analytics
-    	[params.analytics.plausible]
-      	dataDomain = ""
-    
-	# Yandex Metrica
-    	[params.analytics.yandexMetrica]
-      	id = ""
+		# thumbnail URL
+		# 缩略图 URL
+		thumbnailUrl = ""
 
-  # Cookie consent config
-  # Cookie 许可配置
-  [params.cookieconsent]
-    enable = false
-    # text strings used for Cookie consent banner
-    # 用于 Cookie 许可横幅的文本字符串
-    [params.cookieconsent.content]
-      message = ""
-      dismiss = ""
-      link = ""
+	# Analytics config
+	# 网站分析配置
+	[params.analytics]
 
-  # CDN config for third-party library files
-  # 第三方库文件的 CDN 设置
-  [params.cdn]
-    # CDN data file name, disabled by default
-    # ["jsdelivr.yml"]
-    # located in "themes/LoveIt/assets/data/cdn/" directory
-    # you can store your own data files in the same path under your project:
-    # "assets/data/cdn/"
-    # CDN 数据文件名称, 默认不启用
-    # ["jsdelivr.yml"]
-    # 位于 "themes/LoveIt/assets/data/cdn/" 目录
-    # 可以在你的项目下相同路径存放你自己的数据文件:
-    # "assets/data/cdn/"
-    data = "jsdelivr.yml"
+		enable = true
+		
+		# Google Analytics
+		[params.analytics.google]
+			id = "G-KEJQBQ5N2J"
+			
+			# whether to anonymize IP
+			# 是否匿名化用户 IP
+			anonymizeIP = true
+		
+		# Fathom Analytics
+		[params.analytics.fathom]
+			id = ""
+			
+			# server url for your tracker if you're self hosting
+			# 自行托管追踪器时的主机路径
+			server = ""
+		
+		# Plausible Analytics
+			[params.analytics.plausible]
+			dataDomain = ""
+		
+		# Yandex Metrica
+			[params.analytics.yandexMetrica]
+			id = ""
 
-  # Compatibility config
-  # 兼容性设置
-  [params.compatibility]
-    # whether to use Polyfill.io to be compatible with older browsers
-    # 是否使用 Polyfill.io 来兼容旧式浏览器
-    polyfill = false
-    # whether to use object-fit-images to be compatible with older browsers
-    # 是否使用 object-fit-images 来兼容旧式浏览器
-    objectFit = false
+	# Cookie consent config
+	# Cookie 许可配置
+	[params.cookieconsent]
+
+		enable = false
+	
+		# text strings used for Cookie consent banner
+		# 用于 Cookie 许可横幅的文本字符串
+		[params.cookieconsent.content]
+	
+			message = ""
+			dismiss = ""
+			link = ""
+
+	# CDN config for third-party library files
+	# 第三方库文件的 CDN 设置
+	[params.cdn]
+
+		# CDN data file name, disabled by default
+		# ["jsdelivr.yml"]
+		# located in "themes/LoveIt/assets/data/cdn/" directory
+		# you can store your own data files in the same path under your project:
+		# "assets/data/cdn/"
+		# CDN 数据文件名称, 默认不启用
+		# ["jsdelivr.yml"]
+		# 位于 "themes/LoveIt/assets/data/cdn/" 目录
+		# 可以在你的项目下相同路径存放你自己的数据文件:
+		# "assets/data/cdn/"
+		data = "jsdelivr.yml"
+
+	# Compatibility config
+	# 兼容性设置
+	[params.compatibility]
+
+		# whether to use Polyfill.io to be compatible with older browsers
+		# 是否使用 Polyfill.io 来兼容旧式浏览器
+		polyfill = false
+	
+		# whether to use object-fit-images to be compatible with older browsers
+		# 是否使用 object-fit-images 来兼容旧式浏览器
+		objectFit = false
