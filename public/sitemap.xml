@@ -2,6 +2,14 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://example.org/categories/</loc></url><url>
-            <loc>http://example.org/</loc></url><url>
-            <loc>http://example.org/tags/</loc></url></urlset>
+            <loc>http://example.org/posts/hacktoria/contracts/gas_attack_contract_writeup/</loc><lastmod>2023-06-03T11:17:39&#43;05:30</lastmod></url><url>
+            <loc>http://example.org/categories/</loc><lastmod>2023-06-03T11:17:39&#43;05:30</lastmod></url><url>
+            <loc>http://example.org/categories/</loc><lastmod>2023-06-03T11:17:39&#43;05:30</lastmod></url><url>
+            <loc>http://example.org/tags/contract/</loc><lastmod>2023-06-03T11:17:39&#43;05:30</lastmod></url><url>
+            <loc>http://example.org/categories/hacktoria/</loc><lastmod>2023-06-03T11:17:39&#43;05:30</lastmod></url><url>
+            <loc>http://example.org/</loc><lastmod>2023-06-03T11:17:39&#43;05:30</lastmod></url><url>
+            <loc>http://example.org/posts/</loc><lastmod>2023-06-03T11:17:39&#43;05:30</lastmod></url><url>
+            <loc>http://example.org/tags/</loc><lastmod>2023-06-03T11:17:39&#43;05:30</lastmod></url><url>
+            <loc>http://example.org/tags/</loc><lastmod>2023-06-03T11:17:39&#43;05:30</lastmod></url><url>
+            <loc>http://example.org/tags/contract/</loc></url><url>
+            <loc>http://example.org/categories/hacktoria/</loc></url></urlset>
